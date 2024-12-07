@@ -135,6 +135,8 @@ class Repository:
             }
         )
 
+        logger.info("Filetype is %r", data["filetype"])
+
         data_to_send = self._convert_data_to_list_of_tuples(data)
 
         print(f"Uploading {package.basefilename}")
